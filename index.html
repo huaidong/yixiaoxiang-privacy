@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>弈小象 隐私政策</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif;color:#333;background:#FAFAF8;padding:20px;line-height:1.7;}
+.container{max-width:680px;margin:0 auto;}
+h1{font-size:24px;margin-bottom:8px;color:#1a1a1a;}
+.date{font-size:13px;color:#888;margin-bottom:32px;}
+h2{font-size:18px;margin:28px 0 12px;color:#1a1a1a;}
+p,li{font-size:15px;margin-bottom:10px;}
+ul{padding-left:20px;margin-bottom:10px;}
+.footer{margin-top:48px;padding-top:20px;border-top:1px solid #eee;font-size:13px;color:#888;}
+a{color:#007AFF;}
+.lang-switch{margin-bottom:24px;font-size:14px;}
+.lang-switch a{text-decoration:none;margin-right:16px;}
+.lang-switch .active{font-weight:700;border-bottom:2px solid #007AFF;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>弈小象 隐私政策</h1>
+<p class="date">生效日期：2026年9月22日</p>
+
+<div class="lang-switch">
+<a href="#" class="active" onclick="showLang('zh');return false;">简体中文</a>
+<a href="#" onclick="showLang('en');return false;">English</a>
+</div>
+
+<div id="zh">
+<h2>概述</h2>
+<p>弈小象是一款完全离线的儿童象棋启蒙应用。我们高度重视您和您孩子的隐私。本政策说明我们如何处理（实际上，我们<b>不</b>收集）数据。</p>
+
+<h2>我们不收集任何数据</h2>
+<p>弈小象：</p>
+<ul>
+<li><b>不联网</b>——应用内没有任何网络请求</li>
+<li><b>不收集</b>任何个人信息、设备信息或使用数据</li>
+<li><b>不需要</b>注册账号或登录</li>
+<li><b>不使用</b>任何第三方分析、广告或崩溃上报 SDK</li>
+<li><b>不追踪</b>您或您孩子的任何行为</li>
+</ul>
+
+<h2>本地存储</h2>
+<p>应用的学习进度、设置和偏好仅保存在您设备的本地存储中。这些数据不会上传到任何服务器，卸载应用后即被删除。</p>
+
+<h2>儿童隐私</h2>
+<p>本应用适合 6~12 岁儿童使用，已按 App Store 儿童类目要求设计：无广告、无外部链接、无数据收集、无内购。家长可放心给孩子使用。</p>
+
+<h2>开源引用</h2>
+<p>本应用的 AI 引擎使用了开源项目 <a href="https://github.com/xqbase/xqwlight">XQWLight</a>（GPL-2.0）的棋子位置价值数据。我们感谢开源社区的贡献。</p>
+
+<h2>联系我们</h2>
+<p>如有任何疑问，请联系：<a href="mailto:winteryoung.dev@gmail.com">winteryoung.dev@gmail.com</a></p>
+
+<h2>政策更新</h2>
+<p>如果本政策有重大变更，我们会在应用内显著位置通知您。由于我们不收集数据，政策变更不会影响您已有的任何信息（因为根本没有）。</p>
+</div>
+
+<div id="en" style="display:none">
+<h2>Overview</h2>
+<p>YiXiaoXiang is a fully offline Chinese Chess learning app for children. We take your and your child's privacy very seriously. This policy explains how we handle (actually, how we <b>don't</b> collect) data.</p>
+
+<h2>We Collect No Data</h2>
+<p>YiXiaoXiang:</p>
+<ul>
+<li><b>Does not connect</b> to the internet — zero network requests</li>
+<li><b>Does not collect</b> any personal information, device data, or usage data</li>
+<li><b>Does not require</b> account registration or login</li>
+<li><b>Does not use</b> any third-party analytics, advertising, or crash reporting SDKs</li>
+<li><b>Does not track</b> you or your child in any way</li>
+</ul>
+
+<h2>Local Storage</h2>
+<p>Learning progress, settings, and preferences are stored only on your device's local storage. This data is never uploaded to any server and is deleted when the app is uninstalled.</p>
+
+<h2>Children's Privacy</h2>
+<p>This app is designed for children aged 6-12 and complies with App Store Kids Category requirements: no ads, no external links, no data collection, no in-app purchases. Parents can feel confident letting their children use this app.</p>
+
+<h2>Open Source</h2>
+<p>The AI engine uses piece-square table data from the open-source project <a href="https://github.com/xqbase/xqwlight">XQWLight</a> (GPL-2.0). We are grateful for the open-source community's contributions.</p>
+
+<h2>Contact Us</h2>
+<p>If you have any questions, please contact: <a href="mailto:winteryoung.dev@gmail.com">winteryoung.dev@gmail.com</a></p>
+
+<h2>Policy Updates</h2>
+<p>If this policy undergoes significant changes, we will notify you prominently within the app. Since we collect no data, policy changes will not affect any existing information you have (because there is none).</p>
+</div>
+
+<div class="footer">
+<p>© 2026 Winter Young. All rights reserved.</p>
+</div>
+</div>
+
+<script>
+function showLang(lang) {
+  document.getElementById('zh').style.display = lang === 'zh' ? '' : 'none';
+  document.getElementById('en').style.display = lang === 'en' ? '' : 'none';
+  document.querySelectorAll('.lang-switch a').forEach(function(a, i) {
+    a.classList.toggle('active', (lang === 'zh') === (i === 0));
+  });
+}
+</script>
+</body>
+</html>
